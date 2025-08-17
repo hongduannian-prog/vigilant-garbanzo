@@ -1,0 +1,121 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    color: #333;
+}
+
+.app-container {
+    background-color: #fff;
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 90%;
+    text-align: center;
+}
+
+h1 {
+    color: #4a4a4a;
+    margin-bottom: 2rem;
+    font-weight: 600;
+}
+
+/* 任务管理部分样式 */
+.task-input-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 1.5rem;
+}
+
+#task-input {
+    flex-grow: 1;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+#add-task-btn {
+    padding: 12px 20px;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+#add-task-btn:hover {
+    background-color: #4cae4c;
+}
+
+#task-list {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+/* 番茄计时器样式 */
+.pomodoro-timer {
+    margin-top: 2rem;
+}
+
+.timer-display {
+    font-size: 4rem;
+    font-weight: 700;
+    color: #d9534f;
+    margin-bottom: 1rem;
+}
+
+.timer-controls {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.timer-controls button {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+#start-btn {
+    background-color: #5bc0de;
+    color: white;
+}
+
+#pause-btn {
+    background-color: #f0ad4e;
+    color: white;
+}
+
+#reset-btn {
+    background-color: #d9534f;
+    color: white;
+}
+
+#start-btn:hover { background-color: #46b8da; }
+#pause-btn:hover { background-color: #eea236; }
+#reset-btn:hover { background-color: #c9302c; }
+
+/* 鼓励信息样式 */
+.encouragement {
+    margin-top: 2rem;
+    min-height: 1.5rem;
+}
+
+#encouragement-message {
+    color: #4a4a4a;
+    font-style: italic;
+}

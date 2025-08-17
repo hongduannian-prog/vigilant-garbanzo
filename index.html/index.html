@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>专注助手</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app-container">
+        <h1>专注助手</h1>
+
+        <div class="task-manager">
+            <div class="task-input-container">
+                <input type="text" id="task-input" placeholder="输入一个任务分解步骤...">
+                <button id="add-task-btn">添加</button>
+            </div>
+            <ul id="task-list">
+                </ul>
+        </div>
+
+        <div class="pomodoro-timer">
+            <div class="timer-display">
+                <span id="minutes">25</span>:<span id="seconds">00</span>
+            </div>
+            <div class="timer-controls">
+                <button id="start-btn">开始</button>
+                <button id="pause-btn">暂停</button>
+                <button id="reset-btn">重置</button>
+            </div>
+        </div>
+
+        <div class="encouragement">
+            <p id="encouragement-message"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
